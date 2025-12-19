@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+:root {
+  // Colors
+  --clr-black: 0 0% 0%;
+  --clr-white: 0 100% 100%;
+
+  // Blues
+  --clr-blue-950: 233 39% 13%;
+  --clr-blue-900: 234 39% 14%;
+  --clr-blue-850: 235 35% 18%;
+  --clr-blue-100: 227 100% 92%;
+  --clr-blue-50: 229 52% 96%;
+
+  // Grays
+  --clr-gray-400: 233 13% 76%;
+  --clr-gray-200: 0 3% 89%;
+
+  // Primaries
+  --clr-cyan: 182 91% 71%;
+  --clr-red: 0 91% 71%;
+  --clr-purple: 284 89% 74%;
+
+  --clr-gradient-start: 235 32% 27%;
+  --clr-gradient-end: 234 50% 11%;
+
+  // Font Families
+  --ff-sans: 'Kumbh Sans', sans-serif;
+  --ff-serif: 'Roboto Slab', serif;
+  --ff-mono: 'Space Mono', monospace;
+
+  // Gradient
+  --gradient: linear-gradient(
+    297deg,
+    hsl(var(--clr-gradient-start)) 0%,
+    hsl(var(--clr-gradient-end)) 100%
+  );
+}

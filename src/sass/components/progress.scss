@@ -1,0 +1,21 @@
+@use '../util' as *;
+
+.progress {
+  &-circular {
+    position: relative;
+    width: rem(120);
+    height: rem(120);
+
+    .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: rem(16);
+    }
+  }
+
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.35s ease-in-out;
+}
