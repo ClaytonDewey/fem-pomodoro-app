@@ -1,11 +1,10 @@
-import { Progress, Settings } from './components';
+import { Header, TimerBox } from './components';
 
 const App = () => {
   return (
     <div>
-      <h1>Pomodoro App</h1>
-      <Progress />
-      <Settings />
+      <Header />
+      <TimerBox />
     </div>
   );
 };
