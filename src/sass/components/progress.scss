@@ -12,8 +12,9 @@
   &-wrapper {
     position: relative;
     margin: auto;
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 100%;
+    max-width: rem(410);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,72 +37,48 @@
       /* border: 1px solid lightblue; */
       // box-shadow: -1px -1px 5px 0 rgb(8, 8, 8), 3px 3px 5px black;
       border-radius: 50%;
-      padding: 30px;
     }
 
     &-inner {
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      // width: 100%;
-      // height: 100%;
       background: hsl(var(--clr-blue-900));
       color: hsl(var(--clr-blue-900));
-      // border-radius: 50%;
-      // padding: rem(8);
+      padding: rem(8);
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 340px;
-      width: 340px;
+      height: auto;
+      width: 100%;
+      aspect-ratio: 1;
       border-radius: 50%;
     }
   }
+}
 
-  &-circular {
-    position: relative;
-    width: 100%;
+#clock {
+  font-size: 2.5rem;
+  color: hsl(var(--clr-white));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: rem(16);
+}
 
-    svg {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .percentage {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: rem(16);
-    }
-  }
-
+circle {
+  fill: none;
+  stroke: hsl(var(--clr-red));
+  stroke-width: rem(8);
+  stroke-dasharray: 1165;
+  stroke-dashoffset: 550;
+  stroke-linecap: round;
+  // animation: anim 1s ease forwards;
   transform: rotate(-90deg);
   transform-origin: center;
   transition: stroke-dashoffset 0.35s ease-in-out;
 }
 
-#clock {
-  font-size: 2.5rem;
-  color: lightyellow;
-}
-
-svg {
-  position: absolute;
-}
-
-circle {
-  fill: none;
-  stroke: url(#linearGradient);
-  stroke-width: 30px;
-  stroke-dasharray: 1165;
-  stroke-dashoffset: 1165;
-  stroke-linecap: round;
-  animation: anim 1s ease forwards;
-}
-
-@keyframes anim {
-  100% {
-    stroke-dashoffset: 407.75;
-  }
-}
+// @keyframes anim {
+//   100% {
+//     stroke-dashoffset: 407.75;
+//   }
+// }

@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.settings {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: rem(24);
+    padding-inline: rem(24);
+    padding-block-end: rem(56);
+
+    section {
+      padding-block-end: rem(24);
+    }
+
+    section:not(:last-of-type) {
+      border-bottom: rem(1) solid hsl(var(--clr-gray-200));
+    }
+
+    button {
+      position: absolute;
+      bottom: rem(-25);
+      left: 50%;
+      transform: translateX(-50%);
+      margin-inline: auto;
+    }
+  }
+
+  &__header {
+    h3 {
+      text-transform: uppercase;
+      font-size: rem(11);
+      font-weight: 700;
+      letter-spacing: rem(4.23);
+      text-align: center;
+    }
+  }
+}

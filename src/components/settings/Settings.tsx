@@ -1,17 +1,20 @@
-import { Button, Modal } from '.';
-import { Icon } from '../svg';
-import { useModal } from '../hooks/useModal';
+import { Button, Modal } from '../';
+import { Icon } from '../../svg';
+import { useModal } from '../../hooks/useModal';
+import { Color, Font, Time } from '.';
 
 const Settings = () => {
   const { isShown, show, hide } = useModal();
 
   const modalContent = (
-    <div>
-      <p>This is dynamic content passed to the reusable modal component.</p>
-      <Button type='button' onClick={hide} className='btn btn-primary mt-4'>
-        Close from inside
+    <section className='settings__wrapper'>
+      <Time />
+      <Font />
+      <Color />
+      <Button type='button' onClick={hide} className='btn btn-primary'>
+        Apply
       </Button>
-    </div>
+    </section>
   );
   return (
     <div>

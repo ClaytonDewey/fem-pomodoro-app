@@ -1,7 +1,22 @@
 @use '../util' as *;
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: none;
   background: transparent;
+
+  &-primary {
+    background-color: var(--clr-primary);
+    color: hsl(var(--clr-white));
+    height: rem(50);
+    width: rem(140);
+    font-family: inherit;
+    font-size: rem(16);
+    font-weight: 700;
+    line-height: 125%;
+    border-radius: rem(25);
+  }
 }

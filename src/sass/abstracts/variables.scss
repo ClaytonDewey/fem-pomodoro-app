@@ -29,6 +29,10 @@
   --ff-serif: 'Roboto Slab', serif;
   --ff-mono: 'Space Mono', monospace;
 
+  // Theme specific
+  --ff-primary: var(--ff-sans);
+  --clr-primary: hsl(var(--clr-red));
+
   // Gradient
   --gradient: linear-gradient(
     297deg,

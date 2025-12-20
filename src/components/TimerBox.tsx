@@ -1,4 +1,5 @@
-import { Progress, Settings } from '.';
+import { Progress } from '.';
+import { Settings } from './settings/';
 
 const TimerBox = () => {
   return (
