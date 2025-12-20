@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+.form {
+  &-label {
+    text-transform: lowercase;
+    font-size: rem(12);
+    font-weight: 700;
+    line-height: 125%;
+    color: hsl(var(--clr-blue-850) / 0.4);
+  }
+
+  &-control {
+    display: flex;
+    align-items: center;
+    height: rem(40);
+    width: 50%;
+    border: none;
+    background-color: hsl(var(--clr-blue-50));
+    border-radius: rem(10);
+    padding-inline: rem(16);
+    font-family: inherit;
+  }
+}
