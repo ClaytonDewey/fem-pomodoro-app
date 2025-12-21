@@ -4,8 +4,12 @@ const Progress = () => {
       <div className='progress-container-outer'>
         <div className='progress-container-inner'>
           <div id='clock'>17:59</div>
-          <svg width='248.05px' height='248.05px' className='progress-circular'>
-            <circle cx='124.025' cy='124.025' r='120' />
+          <svg
+            width='339'
+            height='339'
+            className='progress-circular'
+            viewBox='0 0 339 339'>
+            <circle cx='169.5' cy='169.5' r='165' />
           </svg>
         </div>
       </div>

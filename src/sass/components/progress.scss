@@ -32,11 +32,9 @@
       box-shadow: rem(-50) rem(-50) rem(100) 0 #272c5a,
         rem(50) rem(50) rem(100) 0 #121530;
 
-      // height: 400px;
-      // width: 400px;
-      /* border: 1px solid lightblue; */
-      // box-shadow: -1px -1px 5px 0 rgb(8, 8, 8), 3px 3px 5px black;
-      border-radius: 50%;
+      @include breakpoint(tablet) {
+        padding: rem(24);
+      }
     }
 
     &-inner {
@@ -50,6 +48,10 @@
       width: 100%;
       aspect-ratio: 1;
       border-radius: 50%;
+
+      svg {
+        height: auto;
+      }
     }
   }
 }
