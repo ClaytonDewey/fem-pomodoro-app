@@ -23,4 +23,22 @@
   &-settings {
     margin: auto;
   }
+
+  &-round {
+    height: rem(40);
+    width: rem(40);
+    border-radius: rem(20);
+
+    &.red {
+      background-color: hsl(var(--clr-red));
+    }
+
+    &.cyan {
+      background-color: hsl(var(--clr-cyan));
+    }
+
+    &.purple {
+      background-color: hsl(var(--clr-purple));
+    }
+  }
 }

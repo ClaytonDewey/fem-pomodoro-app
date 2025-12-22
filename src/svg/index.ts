@@ -1,5 +1,6 @@
 export { default as IconArrowDown } from './ArrowDown';
 export { default as IconArrowUp } from './ArrowUp';
+export { default as IconCheck } from './Check';
 export { default as IconClose } from './Close';
 export { default as Icon } from './Icon';
 export { default as Logo } from './Logo';

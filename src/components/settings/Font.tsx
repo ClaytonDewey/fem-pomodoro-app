@@ -4,6 +4,9 @@ const Font = () => {
       <div className='settings__header'>
         <h3>Font</h3>
       </div>
+      <div className='settings__content'>
+        <p>Font settings will be available in future updates.</p>
+      </div>
     </section>
   );
 };
