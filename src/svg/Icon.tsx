@@ -1,7 +1,16 @@
-import { IconArrowDown, IconArrowUp, IconClose, Logo, IconSettings } from '.';
+import {
+  IconCheck,
+  IconArrowDown,
+  IconArrowUp,
+  IconClose,
+  Logo,
+  IconSettings,
+} from '.';
 
 const Icon = ({ name }: { name: string }) => {
   switch (name) {
+    case 'check':
+      return <IconCheck />;
     case 'arrow-down':
       return <IconArrowDown />;
     case 'arrow-up':

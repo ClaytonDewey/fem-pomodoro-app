@@ -1,4 +1,5 @@
 import { Button } from '../.';
+import { Icon } from '../../svg';
 
 const Color = () => {
   return (
@@ -10,6 +11,7 @@ const Color = () => {
         <div className='settings__content-buttons'>
           <Button type='button' className='btn btn-round red' aria-label='Red'>
             <div className='sr-only'>Red</div>
+            <Icon name='check' />
           </Button>
           <Button
             type='button'

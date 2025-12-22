@@ -28,6 +28,35 @@
     height: rem(40);
     width: rem(40);
     border-radius: rem(20);
+    background-color: hsl(var(--clr-blue-50));
+    color: hsl(var(--clr-blue-850) / 0.75);
+
+    &.active {
+      background-color: hsl(var(--clr-blue-950));
+      color: hsl(var(--clr-white));
+    }
+
+    &.kumbh-sans,
+    &.roboto-slab,
+    &.space-mono {
+      font-size: rem(16);
+      line-height: 125%;
+    }
+
+    &.kumbh-sans {
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+    }
+
+    &.roboto-slab {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+    }
+
+    &.space-mono {
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+    }
 
     &.red {
       background-color: hsl(var(--clr-red));
