@@ -8,7 +8,7 @@ const IconCheck = () => {
       xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M0.707031 5.20709L4.65966 9.15972L13.1123 0.707092'
-        stroke='currentColor'
+        stroke='#161932'
         stroke-width='2'
       />
     </svg>

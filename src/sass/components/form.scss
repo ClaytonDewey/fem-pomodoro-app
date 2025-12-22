@@ -20,4 +20,10 @@
     padding-inline: rem(16);
     font-family: inherit;
   }
+
+  @include breakpoint(tablet) {
+    &-control {
+      width: rem(140);
+    }
+  }
 }
