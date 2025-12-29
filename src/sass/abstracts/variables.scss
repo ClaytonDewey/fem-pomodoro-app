@@ -24,14 +24,14 @@
   --clr-gradient-start: 235 32% 27%;
   --clr-gradient-end: 234 50% 11%;
 
+  // Primary Font/Color
+  --clr-primary: hsl(var(--clr-red) / 1);
+  --ff-primary: var(--ff-sans);
+
   // Font Families
   --ff-sans: 'Kumbh Sans', sans-serif;
   --ff-serif: 'Roboto Slab', serif;
   --ff-mono: 'Space Mono', monospace;
-
-  // Theme specific
-  --ff-primary: var(--ff-sans);
-  --clr-primary: hsl(var(--clr-red));
 
   // Gradient
   --gradient: linear-gradient(
@@ -39,4 +39,24 @@
     hsl(var(--clr-gradient-start)) 0%,
     hsl(var(--clr-gradient-end)) 100%
   );
+}
+
+.font {
+  &-roboto {
+    --ff-primary: var(--ff-serif);
+  }
+
+  &-space {
+    --ff-primary: var(--ff-mono);
+  }
+}
+
+.color {
+  &-cyan {
+    --clr-primary: hsl(var(--clr-cyan) / 1);
+  }
+
+  &-purple {
+    --clr-primary: hsl(var(--clr-purple) / 1);
+  }
 }

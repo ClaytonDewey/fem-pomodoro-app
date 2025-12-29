@@ -1,9 +1,12 @@
+import { useTimerStore } from '../store/useTimerStore';
+
 const Progress = () => {
+  const { pomodoro } = useTimerStore();
   return (
     <div className='progress-wrapper'>
       <div className='progress-container-outer'>
         <div className='progress-container-inner'>
-          <div id='clock'>17:59</div>
+          <div id='clock'>{pomodoro}:00</div>
           <svg
             width='339'
             height='339'

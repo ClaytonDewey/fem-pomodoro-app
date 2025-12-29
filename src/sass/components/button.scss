@@ -36,24 +36,24 @@
       color: hsl(var(--clr-white));
     }
 
-    &.kumbh-sans,
-    &.roboto-slab,
-    &.space-mono {
+    &.kumbh,
+    &.roboto,
+    &.space {
       font-size: rem(16);
       line-height: 125%;
     }
 
-    &.kumbh-sans {
+    &.kumbh {
       font-family: 'Kumbh Sans', sans-serif;
       font-weight: 700;
     }
 
-    &.roboto-slab {
+    &.roboto {
       font-family: 'Roboto Slab', serif;
       font-weight: 400;
     }
 
-    &.space-mono {
+    &.space {
       font-family: 'Space Mono', monospace;
       font-weight: 700;
     }
