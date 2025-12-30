@@ -1,7 +1,13 @@
 import { useTimerStore } from '../store/useTimerStore';
 
 const Progress = () => {
-  const { pomodoro } = useTimerStore();
+  const { pomodoro, shortBreak, longBreak, activeTimer } = useTimerStore();
+  let displayTime = pomodoro;
+  if (activeTimer === 'short break') {
+    displayTime = shortBreak;
+  } else if (activeTimer === 'long break') {
+    displayTime = longBreak;
+  }
   return (
     <div className='progress-wrapper'>
       <div className='progress-container-outer'>

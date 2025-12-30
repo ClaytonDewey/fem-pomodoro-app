@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-family: inherit;
   border: none;
   background: transparent;
 
@@ -13,11 +14,26 @@
     color: hsl(var(--clr-white));
     height: rem(50);
     width: rem(140);
-    font-family: inherit;
     font-size: rem(16);
     font-weight: 700;
     line-height: 125%;
     border-radius: rem(25);
+  }
+
+  &-pill {
+    color: hsl(var(--clr-blue-100));
+    font-size: rem(12);
+    line-height: 125%;
+    font-weight: 700;
+    height: 100%;
+    width: rem(105);
+    border-radius: rem(24);
+    transition: var(--transition);
+
+    &.active {
+      color: hsl(var(--clr-blue-850));
+      background-color: var(--clr-primary);
+    }
   }
 
   &-settings {

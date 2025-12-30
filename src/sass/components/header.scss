@@ -10,6 +10,8 @@
   text-align: center;
   margin-block-end: rem(47);
   margin-inline: auto;
+  padding-block-start: rem(32);
+  padding-inline: rem(30);
   width: 100%;
   max-width: rem(380);
 
@@ -32,7 +34,8 @@
     align-items: center;
     justify-content: space-between;
     background-color: hsl(var(--clr-blue-900));
-    height: rem(59);
+    height: rem(63);
     border-radius: rem(31.5);
+    padding: rem(7.5) 0;
   }
 }
