@@ -1,10 +1,10 @@
-import { Progress } from '.';
+import { ProgressBar } from '.';
 import { Settings } from './settings/';
 
 const TimerBox = () => {
   return (
     <div className='timer-box'>
-      <Progress />
+      <ProgressBar />
       <Settings />
     </div>
   );

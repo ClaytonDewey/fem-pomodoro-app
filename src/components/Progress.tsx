@@ -12,7 +12,7 @@ const Progress = () => {
     <div className='progress-wrapper'>
       <div className='progress-container-outer'>
         <div className='progress-container-inner'>
-          <div id='clock'>{pomodoro}:00</div>
+          <div id='clock'>17:59</div>
           <svg
             width='339'
             height='339'

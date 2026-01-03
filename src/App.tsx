@@ -16,7 +16,7 @@ const App = () => {
   }, [color, font]);
 
   return (
-    <div>
+    <div className='app'>
       <Header />
       <TimerBox />
     </div>

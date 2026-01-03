@@ -1,5 +1,19 @@
 @use '../util' as *;
 
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--clr-primary);
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: none;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: hsl(var(--clr-white));
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
 .timer-box {
   display: flex;
   flex-direction: column;
@@ -52,6 +66,10 @@
 
       svg {
         height: auto;
+      }
+
+      @include breakpoint(tablet) {
+        padding: rem(16);
       }
     }
   }

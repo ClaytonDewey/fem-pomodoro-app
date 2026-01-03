@@ -36,3 +36,17 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: rem(47);
+
+  @include breakpoint(tablet) {
+    gap: rem(108);
+  }
+
+  @include breakpoint(desktop) {
+    gap: rem(36);
+  }
+}
