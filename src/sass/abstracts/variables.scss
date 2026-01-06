@@ -21,8 +21,8 @@
   --clr-red: 0 91% 71%;
   --clr-purple: 284 89% 74%;
 
-  --clr-gradient-start: 235 32% 27%;
-  --clr-gradient-end: 234 50% 11%;
+  --clr-gradient-start: #0e112a;
+  --clr-gradient-end: #2e325a;
 
   // Primary Font/Color
   --clr-primary: hsl(var(--clr-red) / 1);
@@ -35,9 +35,9 @@
 
   // Gradient
   --gradient: linear-gradient(
-    315deg,
-    hsl(var(--clr-gradient-start)) 0%,
-    hsl(var(--clr-gradient-end)) 100%
+    95deg,
+    var(--clr-gradient-start) 0%,
+    var(--clr-gradient-end) 100%
   );
 
   @media (prefers-reduced-motion: no-preference) {
