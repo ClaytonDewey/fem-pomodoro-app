@@ -1,4 +1,3 @@
-import { Icon } from '../svg';
 import { useTimerStore } from '../store/useTimerStore';
 
 const Header = () => {
@@ -12,8 +11,7 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='header__logo'>
-        <h1 className='sr-only'>Pomodoro</h1>
-        <Icon name='logo' />
+        <h1>Pomodoro</h1>
       </div>
       <div className='header__buttons'>
         {timers.map((timer) => (
