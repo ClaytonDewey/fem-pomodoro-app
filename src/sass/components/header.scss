@@ -16,8 +16,18 @@
 
   &__logo {
     display: flex;
+    justify-content: center;
     align-items: flex-end;
+    text-align: center;
     height: rem(30);
+
+    h1 {
+      font-size: rem(24);
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+      color: hsl(var(--clr-blue-100));
+      text-transform: lowercase;
+    }
 
     svg {
       display: block;
@@ -25,6 +35,13 @@
       height: rem(24);
       width: rem(109);
       margin-inline: auto;
+    }
+
+    @include breakpoint(tablet) {
+      height: rem(40);
+      h1 {
+        font-size: rem(32);
+      }
     }
   }
 
@@ -40,9 +57,16 @@
 
   @include breakpoint(tablet) {
     padding-inline: 0;
+    padding-block-start: rem(80);
+    gap: rem(48);
 
     &__buttons {
       padding-inline: rem(10);
     }
+  }
+
+  @include breakpoint(desktop) {
+    padding-block-start: rem(48);
+    gap: rem(56);
   }
 }
